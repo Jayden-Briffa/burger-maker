@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useRef } from "react";
+import { useState, useCallback, useRef } from "react";
 import { BurgerLayersContext } from "../hooks/useBurgerLayers";
 
 function BurgerLayersProvider({children}){
@@ -7,10 +7,6 @@ function BurgerLayersProvider({children}){
     const [layersBounding, setLayersBounding] = useState({})
     const burgerRef = useRef(null);
     const deliveryRef = useRef(null);
-
-    useEffect(() => {
-        console.log("\nLAYERS CHANGED", layers)
-    }, [layers])
 
     const sortLayers = useCallback(() => {
 
@@ -52,8 +48,6 @@ function BurgerLayersProvider({children}){
         
         const id = idBase + "-" + newNum.toString()
         const newLayer = {id, idBase, imgSrc}
-        console.log("NEW ID", id);
-        console.log("LAYERS", layers)
         let coords;
 
         setLayers((prev) => [...prev, newLayer])
@@ -61,9 +55,7 @@ function BurgerLayersProvider({children}){
     }, [setLayers, layers])
 
     const removeLayer = useCallback((id) => {
-        console.log("DELETING:", id)
-        
-        setLayers((prev) => prev.filter((layer) => {console.log(layer.id); return layer.id !== id}))
+        setLayers((prev) => prev.filter((layer) => layer.id !== id))
         setLayersBounding((prev) => {
             let newLayersBounding = {...prev}; // Create a shallow copy of prev to avoid mutating prev
             delete newLayersBounding[id];

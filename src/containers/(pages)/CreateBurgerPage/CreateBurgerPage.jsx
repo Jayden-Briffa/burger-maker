@@ -1,11 +1,11 @@
 import Burger from '../../Burger';
-import BurgerCompGenBtns from '../../BurgerCompGenBtns';
+import BurgerLayerGenBtns from '../../../presentors/BurgerLayerGenBtns';
 import DeliveryIcon from '../../../presentors/DeliveryIcon';
 
 const CreateBurgerPage = () => {
     return (
         <>
-            <BurgerCompGenBtns />
+            <BurgerLayerGenBtns />
 
             <div className='flex justify-center'>
                 <DeliveryIcon />
