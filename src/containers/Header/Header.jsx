@@ -1,11 +1,14 @@
 import './Header.styles.css';
 import html2canvas from 'html2canvas';
 import { useBurgerLayers } from '../../hooks/useBurgerLayers';
-import { RawHtml } from 'static-jsx';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router'
+import { useCallback } from 'react';
 
 const Header = () => { 
 
     const { burgerRef } = useBurgerLayers();
+    const location = useLocation();
 
     const handleDownloadImage = async () => {
 
@@ -33,13 +36,18 @@ const Header = () => {
             window.open(data);
         }
     };
+
+    const checkIfActive = useCallback((path) => location.pathname === path ? "active" : "", [location.pathname])
     
     return (
         <header className="flex justify-around text-center m-0">
 
-            <div></div>
+            <nav className='flex justify-center gap-2'>
+                <Link to="/" className={`my-auto ${checkIfActive('/')}`}><button className='rounded-sm py-1 px-4 no-grow' >Burger maker</button></Link>
+                <Link to="/credits" className={`my-auto ${checkIfActive('/credits')}`}><button className='rounded-sm py-1 px-4 no-grow' >Credits</button></Link>
+            </nav>
 
-            <h1 className='my-auto'>Burger maker</h1>
+            <h1 className='my-auto'>Burger Maker</h1>
 
             <button type="button" className='my-3 py-0 px-4 rounded-2xl' onClick={handleDownloadImage}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">

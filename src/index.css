@@ -45,3 +45,7 @@ button:hover {
   scale: 1.2;
   z-index: 10;
 }
+
+button.no-grow:hover {
+  scale: 1
+}

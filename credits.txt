@@ -6,5 +6,4 @@ Cheese: <a href="https://www.flaticon.com/free-icons/cheese" title="cheese icons
 Patty: <a href="https://www.flaticon.com/free-icons/steak" title="steak icons">Steak icons created by Freepik - Flaticon</a>
 
 Download: https://icons.getbootstrap.com/icons/download/
-Trash: https://icons.getbootstrap.com/icons/trash3/
 Delivery: <a href="https://www.flaticon.com/free-icons/delivery" title="delivery icons">Delivery icons created by Kiranshastry - Flaticon</a>

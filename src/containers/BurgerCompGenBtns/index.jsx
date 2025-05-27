@@ -1,2 +1,2 @@
-import Component from './Component'
-export default Component
+import BurgerCompGenBtns from './BurgerCompGenBtns'
+export default BurgerCompGenBtns

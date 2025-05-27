@@ -9,6 +9,11 @@ header {
     color: white
 }
 
-header button svg {
+nav a {
+    color: white;
+    transition: box-shadow 0.4s;
+}
 
+nav a.active {
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
 }

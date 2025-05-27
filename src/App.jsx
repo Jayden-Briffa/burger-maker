@@ -1,10 +1,10 @@
 import './App.css';
 import Header from './containers/Header';
 import Footer from './containers/Footer';
-import Burger from './containers/Burger/Burger';
-import BurgerCompGenBtns from './containers/BurgerCompGenBtns/BurgerCompGenBtns';
 import BurgerLayersProvider from './context/BurgerLayersContext';
-import DeliveryIcon from './presentors/DeliveryIcon/DeliveryIcon';
+import { Route, Routes } from 'react-router-dom';
+import CreateBurgerPage from './containers/(pages)/CreateBurgerPage';
+import CreditsPage from './containers/(pages)/CreditsPage';
 
 function App() {
   return (
@@ -12,12 +12,11 @@ function App() {
       <Header />
 
       <main>
-        <BurgerCompGenBtns />
 
-        <div className='flex justify-center'>
-          <DeliveryIcon />
-          <Burger />
-        </div>
+          <Routes>
+            <Route exact path="/" element={<CreateBurgerPage />} />
+            <Route exact path="/credits" element={<CreditsPage />} />
+          </Routes>
 
       </main>
 
