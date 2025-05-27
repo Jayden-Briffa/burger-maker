@@ -6,6 +6,7 @@ import cheeseSrc from "../burger/cheese.png";
 import pattySrc from "../burger/patty.png";
 import downloadSrc from "../download.svg";
 import deliverySrc from "../delivery.png";
+import faviconSrc from "../favicon.ico";
 
 const imageCredits = [
   {
@@ -63,6 +64,13 @@ const imageCredits = [
     description: "Burger layer spawn point",
     href: "https://www.flaticon.com/free-icons/delivery",
     creator: "Kiranshastry"
+  },
+  {
+    imgSrc: faviconSrc,
+    imgTitle: "Favicon",
+    description: "Burger icon for web app",
+    href: "https://www.flaticon.com/free-icons/hamburger",
+    creator: "Freepik - Flaticon"
   }
 ];
 

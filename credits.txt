@@ -7,3 +7,4 @@ Patty: <a href="https://www.flaticon.com/free-icons/steak" title="steak icons">S
 
 Download: https://icons.getbootstrap.com/icons/download/
 Delivery: <a href="https://www.flaticon.com/free-icons/delivery" title="delivery icons">Delivery icons created by Kiranshastry - Flaticon</a>
+Favicon: <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by Freepik - Flaticon</a>
