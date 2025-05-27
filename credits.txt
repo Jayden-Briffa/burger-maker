@@ -1,0 +1,10 @@
+Burger heel: <a href="https://www.flaticon.com/free-icons/bun" title="bun icons">Bun icons created by Nsit - Flaticon</a>
+Burger crown: <a href="https://www.flaticon.com/free-icons/bread" title="bread icons">Bread icons created by Nsit - Flaticon</a>
+Lettuce: <a href="https://www.flaticon.com/free-icons/lettuce" title="lettuce icons">Lettuce icons created by Mihimihi - Flaticon</a>
+Tomato: <a href="https://www.flaticon.com/free-icons/tomato" title="tomato icons">Tomato icons created by Ylivdesign - Flaticon</a>
+Cheese: <a href="https://www.flaticon.com/free-icons/cheese" title="cheese icons">Cheese icons created by Freepik - Flaticon</a>
+Patty: <a href="https://www.flaticon.com/free-icons/steak" title="steak icons">Steak icons created by Freepik - Flaticon</a>
+
+Download: https://icons.getbootstrap.com/icons/download/
+Trash: https://icons.getbootstrap.com/icons/trash3/
+Delivery: <a href="https://www.flaticon.com/free-icons/delivery" title="delivery icons">Delivery icons created by Kiranshastry - Flaticon</a>

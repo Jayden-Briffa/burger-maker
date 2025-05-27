@@ -1,0 +1,14 @@
+header {
+    position: relative;
+    height: var(--HEIGHT-HEADER);
+    width: 100%;
+    background-color: var(--COLOR-PRIMARY);
+    background-image: url('../../assets/checkerboard.png');
+    background-repeat: repeat;
+    background-size: contain;
+    color: white
+}
+
+header button svg {
+
+}

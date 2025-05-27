@@ -1,0 +1,11 @@
+#burger {
+    margin-top: 10px;
+    width: 400px;
+    height: 400px;
+    justify-self: center;
+}
+
+#burger.framed {
+    border: 1px solid rgba(88, 88, 88, 0.2);
+    border-radius: 50px;
+}

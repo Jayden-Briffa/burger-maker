@@ -1,0 +1,5 @@
+.btn-burger-comp-gen,
+.btn-burger-comp-gen img{
+    height: 50px;
+    cursor: url('../../assets/cursor.cur');
+}
