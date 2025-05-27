@@ -19,7 +19,7 @@ const steps = [
     {
         imgSrc: burgerFrameSrc,
         imgTitle: "The burger frame",
-        description: "You'll see a faint outline. This is where your burger should be constructed. Anything outside of this area will be excluded"
+        description: "You'll see an outline. This is where your burger should be constructed. Use the slider to make it darker or lighter"
     },
     {
         imgSrc: belowBehindSrc,
@@ -36,7 +36,6 @@ const steps = [
         imgTitle: "Download your burger",
         description: "Once you've made your masterpiece, click download to keep it forever!"
     }
-
 
 ]
 

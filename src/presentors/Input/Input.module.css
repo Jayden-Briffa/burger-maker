@@ -1,0 +1,25 @@
+.slider {
+  -webkit-appearance: none;
+  width: 10%;
+  height: 8px;
+  background: transparent;
+}
+
+/* Track */
+.slider::-webkit-slider-runnable-track {
+  background: #ccc;
+  height: 8px;
+  border-radius: 4px;
+}
+
+/* Thumb */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px; /* aligns thumb with track */
+}

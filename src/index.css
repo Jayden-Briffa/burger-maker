@@ -9,6 +9,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --COLOR-BTN: rgb(31, 31, 31);
 }
 
 a {
@@ -35,15 +37,23 @@ h1 {
 }
 
 button {
-  background-color: rgb(31, 31, 31);
+  background-color: var(--COLOR-BTN);
   cursor: pointer;
   transition: all 0.2s;
+}
+
+button.not-allowed {
+  cursor: not-allowed;
 }
 
 button:hover {
   background-color: rgb(0, 54, 97);
   scale: 1.2;
-  z-index: 10;
+}
+
+button.not-allowed:hover {
+  background-color: var(--COLOR-BTN);
+  scale: 1;
 }
 
 button.no-grow:hover {
