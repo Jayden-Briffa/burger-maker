@@ -11,7 +11,7 @@ import "./BurgerCompGenBtns.styles.css"
 const BurgerCompGenBtns = () => {
 
     return (
-        <div className="burger-comp-gen-btns flex justify-around">
+        <div className="burger-comp-gen-btns flex justify-around" id="burger-layer-gen-btns">
             <BtnBurgerCompGen idBase="burger-crown" imgSrc={bunCrownSrc} imgAlt="bun-crown" />
             <BtnBurgerCompGen idBase="burger-heel" imgSrc={bunHeelSrc} imgAlt="bun-heel" />
             <BtnBurgerCompGen idBase="burger-cheese" imgSrc={cheeseSrc} imgAlt="cheese" />
