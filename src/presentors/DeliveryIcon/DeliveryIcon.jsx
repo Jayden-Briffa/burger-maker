@@ -1,3 +1,5 @@
+
+import { memo } from 'react';
 import deliverySrc from '../../assets/delivery.png';
 import { useBurgerLayers } from '../../hooks/useBurgerLayers';
 import './DeliveryIcon.styles.css';
@@ -13,4 +15,4 @@ const DeliveryIcon = () => {
     )
 }
 
-export default DeliveryIcon;
+export default memo(DeliveryIcon);

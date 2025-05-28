@@ -1,10 +1,9 @@
 import './Header.styles.css';
 import html2canvas from 'html2canvas';
 import { useBurgerLayers } from '../../hooks/useBurgerLayers';
-import { Link } from 'react-router-dom';
+import NavLink from '../../presentors/NavLink';
 import { useLocation } from 'react-router'
 import { useCallback } from 'react';
-import Input from '../../presentors/Input/Input';
 
 const Header = () => { 
 
@@ -14,11 +13,9 @@ const Header = () => {
 
     const handleDownloadImage = async () => {
 
-        burgerRef.current.classList.remove('framed')
+        if (location.pathname !== "/") return;
 
         const canvas = await html2canvas(burgerRef.current);
-
-        burgerRef.current.classList.add('framed')
 
         const data = canvas.toDataURL('image/png');
         const link = document.createElement('a');
@@ -39,17 +36,15 @@ const Header = () => {
         }
     };
 
-    const checkIfActive = useCallback((path) => location.pathname === path ? "active" : "", [location.pathname])
-
-    const linkClasses = 'rounded-sm py-1 px-4 no-grow'
+     const checkIfActive = useCallback((path) => location.pathname === path ? "active" : "", [location.pathname])
     
     return (
         <header className="grid grid-cols-3 justify-around text-center m-0">
 
             <nav className='flex justify-center gap-2'>
-                <Link to="/" className={`my-auto ${checkIfActive('/')}`}><button className={linkClasses} >Burger maker</button></Link>
-                <Link to="/credits" className={`my-auto ${checkIfActive('/credits')}`}><button className={linkClasses} >Credits</button></Link>
-                <Link to="/guide" className={`my-auto ${checkIfActive('/guide')}`}><button className={linkClasses} >Guide</button></Link>
+                <NavLink path="/" checkIfActive={checkIfActive} >Burger maker</NavLink>
+                <NavLink path="/credits" checkIfActive={checkIfActive} >Credits</NavLink>
+                <NavLink path="/guide" checkIfActive={checkIfActive} >Guide</NavLink>
             </nav>
 
             <h1 className='my-auto'>Burger Maker</h1>

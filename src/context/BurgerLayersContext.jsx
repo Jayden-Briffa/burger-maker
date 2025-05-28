@@ -40,19 +40,24 @@ function BurgerLayersProvider({children}){
     const addLayer = useCallback((idBase, imgSrc) => {
 
         let newNum = 0;
-        if (layers.length > 0){
-            const lastId = layers[layers.length - 1]?.id;
-            const lastIdSplit = lastId.split("-");
-            newNum = parseInt(lastIdSplit[lastIdSplit.length - 1]) + 1;
-        }
-        
-        const id = idBase + "-" + newNum.toString()
-        const newLayer = {id, idBase, imgSrc}
+        let id;
         let coords;
 
-        setLayers((prev) => [...prev, newLayer])
+        setLayers((prev) => {
+            if (prev.length > 0){
+                const lastId = prev[prev.length - 1]?.id;
+                const lastIdSplit = lastId.split("-");
+                newNum = parseInt(lastIdSplit[lastIdSplit.length - 1]) + 1;
+            }
+            
+            const id = idBase + "-" + newNum.toString()
+            const newLayer = {id, idBase, imgSrc}
+
+            return [...prev, newLayer]
+        })
+
         setLayersBounding((prev) => ({...prev, [id]: coords}))
-    }, [setLayers, layers])
+    }, [ setLayers ])
 
     const removeLayer = useCallback((id) => {
         setLayers((prev) => prev.filter((layer) => layer.id !== id))

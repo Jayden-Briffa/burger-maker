@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import './Input.module.css'
 
 const Input = (props) => {
@@ -30,4 +31,4 @@ const Input = (props) => {
     )
 }
 
-export default Input;
+export default memo(Input);
